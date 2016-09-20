@@ -2,7 +2,6 @@ module.exports = {
   extends: [
     './rules/best-practices',
     './rules/errors',
-    './rules/legacy',
     './rules/node',
     './rules/style',
     './rules/variables'
@@ -16,5 +15,8 @@ module.exports = {
   },
   ecmaFeatures: {},
   globals: {},
-  rules: {}
+  rules: {
+    'comma-dangle': ['error', 'never'],
+    'prefer-numeric-literals': 'off',
+  }
 };
